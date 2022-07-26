@@ -20,8 +20,9 @@ function Order() {
       <h1>Order Progress Page</h1>
       <div className={styles.container}>
         <div className={styles.left}>
-          <div className={styles.row}>
+          {/* <div className={styles.row}> */}
             <table className={styles.table}>
+            <tbody>
               <tr className={styles.tr}>
                 <th>Order ID</th>
                 <th>Customer</th>
@@ -29,23 +30,14 @@ function Order() {
                 <th>Total</th>
               </tr>
               <tr>
-                <td>
-                  <span className={styles.id}>123456789101112</span>
-                </td>
-                <td>
-                  <span className={styles.name}>Chris Ware</span>
-                </td>
-                <td>
-                  <span className={styles.address}>
-                    123 Main St. NY, NY 10023
-                  </span>
-                </td>
-                <td>
-                  <span className={styles.total}>$39.80</span>
-                </td>
+                <td>123456789101112</td>
+                <td>Chris Ware</td>
+                <td>123 Main St. NY, NY 10023</td>
+                <td>$39.80</td>
               </tr>
+              </tbody>
             </table>
-          </div>
+          {/* </div> */}
           <div className={styles.row}>
             <div className={statusClass(0)}>
               <Image src={payment} width={30} height={30} />
